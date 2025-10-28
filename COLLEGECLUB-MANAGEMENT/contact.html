@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CAMPUS CONNECT</title>
+  <link rel="stylesheet" href="common.css" />
+  <link rel="stylesheet" href="contact.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container navbar">
+      <div class="logo">CAMPUS CONNECT</div>
+
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="clubs.html">Clubs</a>
+        <a href="events.html">Events</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+      <div class="auth-buttons">
+        <a href="auth.html" class="btn btn-outline">Login</a>
+        <a href="auth.html" class="btn btn-primary">Sign Up</a>
+      </div>
+
+      <button class="mobile-menu-btn" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="contact-hero">
+    <div class="container hero-content">
+      <h1>Contact Student Life</h1>
+      <p>Questions about clubs, events, or memberships? Send us a message and we’ll help you out.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT CONTENT -->
+  <section class="container contact-wrap">
+    <!-- FORM -->
+    <div class="contact-card">
+      <h2>Send a Message</h2>
+      <p class="muted">We usually reply within one business day.</p>
+
+      <form class="contact-form" action="#" method="post" novalidate>
+        <div class="grid-2">
+          <div class="form-field">
+            <label for="name">Full Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+            <small class="hint">Enter your first and last name.</small>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" placeholder="you@college.edu" required />
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="form-field">
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" />
+          </div>
+
+          <div class="form-field">
+            <label for="topic">Topic <span aria-hidden="true">*</span></label>
+            <select id="topic" name="topic" required>
+              <option value="" disabled selected>Select a topic</option>
+              <option value="membership">Club Membership</option>
+              <option value="event">Event Registration</option>
+              <option value="support">Technical Support</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Message <span aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell us how we can help…" required></textarea>
+        </div>
+
+        <label class="checkbox">
+          <input type="checkbox" name="consent" required />
+          <span>I agree to be contacted regarding my query.</span>
+        </label>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+
+        <p class="form-note" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <!-- SIDEBAR INFO -->
+    <aside class="contact-side">
+      <div class="info-card">
+        <h3>Contact Details</h3>
+        <ul class="info-list">
+          <li>📧 clubs@chitkara.edu.in</li>
+          <li>📞 +91 123456789</li>
+          <li>🏛️ Student Union Building, Room 210</li>
+          <li>🕒 Mon–Fri: 9:00 AM – 3:00 PM</li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <h3>Follow Us</h3>
+        <ul class="info-list social">
+          <li><a href="https://www.instagram.com/chitkarau/">Instagram</a></li>
+          <li><a href="https://www.facebook.com/ChitkaraU">Facebook</a></li>
+          <li><a href="https://x.com/chitkarau">X (Twitter)</a></li>
+        </ul>
+      </div>
+    </aside>
+  </section>
+
+  <!-- MAP -->
+  <section class="map-section">
+    <div class="container">
+      <h2>Find Us on Campus</h2>
+      <div class="map-embed" role="region" aria-label="Campus location map">
+        <iframe
+          title="Chitkara University Map"
+          src="https://maps.google.com/maps?q=Chitkara%20University&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="container faq">
+    <h2>Frequently Asked Questions</h2>
+    <details>
+      <summary>How do I join a club?</summary>
+      <p>Open the Clubs page, pick a club, and click “Join Now.” You’ll get a confirmation email.</p>
+    </details>
+    <details>
+      <summary>Where can I see upcoming events?</summary>
+      <p>Check the Events page for all upcoming activities with registration links.</p>
+    </details>
+    <details>
+      <summary>Do I need prior experience?</summary>
+      <p>No. Most clubs welcome beginners and provide mentorship.</p>
+    </details>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2025 College Club Management. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="user-session.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>

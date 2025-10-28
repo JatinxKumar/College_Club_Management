@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "id": "4920",
+      "name": "madhav",
+      "email": "madhav@gmail.com",
+      "password": "123456",
+      "createdAt": "2025-10-28T08:51:48.732Z"
+    },
+    {
+      "id": "ffc6",
+      "name": "manu",
+      "email": "manu@gmail.com",
+      "password": "123456789",
+      "createdAt": "2025-10-28T09:06:31.758Z"
+    },
+    {
+      "id": "585b",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "111111",
+      "createdAt": "2025-10-28T09:09:45.198Z"
+    }
+  ],
+  "currentUser": {}
+}
